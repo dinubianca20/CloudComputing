@@ -1,6 +1,19 @@
+import BookList from "@/components/BooksList";
+import { getFeaturedBooks } from "@/utils/frontend/utils";
 
-export default function Home() {
-  return (
-   <div>Hello world</div>
-  );
+function Home({books}) {
+
+  return <BookList data={books}/>;
 }
+
+export default Home;
+
+export const getStaticProps = async () => {
+    const books = await getFeaturedBooks();
+
+    return {
+      props: {
+        books,
+      },
+    };
+};
