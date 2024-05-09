@@ -2,7 +2,7 @@ import React from "react";
 import Form from "./Form";
 import axios from "axios";
 import { sendBook } from "@/utils/frontend/utils";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Add = () => {
     const router = useRouter();

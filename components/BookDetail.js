@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { getBookFromId, updateBook } from "@/utils/frontend/utils";
 import Form from "./Form";
 
