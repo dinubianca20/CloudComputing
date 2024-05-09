@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import { connectToDatabase } from "@/lib/mongodb";
+import { getCollection } from '@/lib/mongodb.js';
 import { addBook, getAllBooks } from "@/utils/controllers/books-controllers";
 import mongoose from "mongoose";
 
@@ -17,3 +17,4 @@ export default function handler(req, res) {
 		return addBook(req,res);
 	}
 }
+

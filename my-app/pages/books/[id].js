@@ -1,5 +1,7 @@
+import BookDetail from "@/components/BookDetail";
+
 function BookDetails() {
-    return <h1>Book Detail</h1>
+    return <BookDetail></BookDetail>
 }
 
 export default BookDetails;
