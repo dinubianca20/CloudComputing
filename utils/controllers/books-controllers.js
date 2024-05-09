@@ -101,5 +101,5 @@ export const getBook = async(req, res) => {
     if(!book) {
         return res.status(404).json({message: "No book found from given id"});
     }
-    return res.status(201).json({book});
+    return res.status(200).json({book});
 };
