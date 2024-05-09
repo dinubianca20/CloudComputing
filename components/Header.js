@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FilterVintageIcon from '@mui/icons-material/FilterVintage';
 import { AppBar, Box, Tab, Tabs, Toolbar, Typography } from "@mui/material";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 const Header = () => {
     const router = useRouter();
 

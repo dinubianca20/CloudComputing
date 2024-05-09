@@ -2,7 +2,7 @@ import { Card, CardContent, CardActions, Button, Typography, Snackbar, Alert } f
 import React, { Fragment, useState } from "react";
 import Link from 'next/link';
 import { deleteBook } from "@/utils/frontend/utils";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 const BookItem = ({ title, price, id, author, imageUrl, featured }) => {

@@ -12,7 +12,7 @@ export const getAllBooks = async () => {
 
 export const getFeaturedBooks = async () => {
     const books = await getAllBooks();
-    if (books.lenght == 0) {
+    if (books.length == 0) {
         return [];
     }
     const featuredBooks = books.filter((book) => book.featured == true)
