@@ -8,15 +8,16 @@ const BookDetail = () => {
     const [book, setBook] = useState();
     const router = useRouter();
     console.log(router.query);
-    const id = router.query.id;
+    
 
     useEffect(() => {
+        const id = router.query.id;
         getBookFromId(id).then((data)=>{console.log(data); setBook(data)}).catch(err=>console.log(err));
     },[router.query.id]);
     
 
     const getFormData = (data) => {
-
+        const id = router.query.id;
         updateBook(id, data).then((value) => console.log(value)).then(() => {
             router.push("/");
         }).catch(err => console.log(err));
