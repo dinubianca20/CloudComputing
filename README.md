@@ -1,40 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**1. Introducere**
 
-## Getting Started
+Proiectul reprezintă o aplicație pentru gestionarea unei colecții extinse de cărți. Scopul acestei aplicații este de a furniza utilizatorilor o imagine de ansamblu, oferind funcționalități esențiale pentru gestionarea și explorarea colecțiilor personale. Utilizatorii pot vedea lista completă a cărților cu detalii esențiale și cărțile favorite.
+Toate datele din aplicație au fost gestionate prin intermediul unei baze de date cloud, folosind tehnologia **MongoDB**. Backend-ul aplicației a fost dezvoltat utilizând **Node.js** și un API pentru _operațiile CRUD_ realizate în cadrul bazei de date. Interfața utilizatorului a fost creată în React, iar aplicația finală a fost publicată cu ajutorul platformei de cloud **Vercel**.
 
-First, run the development server:
+**2. Tehnologii**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**MondoDB API**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Prin intermediul bazei de date, utilizatorii pot adăuga, șterge și actualiza cărți, iar aceste modificări sunt reflectate și în baza de date. 
+Conectarea la baza de date a fost realizată prin intermediul NEXT_ATLAS_URI (cheia unica a bazei de date) si NEXT_ATLAS_DATABASE (numele bazei de date).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![image](https://github.com/dinubianca20/cloudComputing/assets/106347054/de9ed397-f134-4c06-a522-b1187182777a)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Pentru a efectua operațiile CRUD asupra bazei de date, am dezvoltat două rute principale și una secundară pentru adăugarea unei cărți noi.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Home ("/"): Aceasta este ruta principală a aplicației, care afișează toate cărțile disponibile
+2. Favorite ("/books"): Aceasta este o altă rută principală, care probabil cărțile favorite ale utilizatorului.
+3. Add book ("/books/add"): Aceasta este o rută secundară care permite utilizatorului să adauge o nouă carte în aplicație.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Aceste rute sunt incluse într-un meniu.
 
-## Learn More
+![image](https://github.com/dinubianca20/cloudComputing/assets/106347054/fe994b0d-205c-4e74-9e2c-452296dd1de5)
+![Screenshot 2024-05-09 222252](https://github.com/dinubianca20/cloudComputing/assets/106347054/13986079-3227-4806-917f-1b11c9b3a642)
 
-To learn more about Next.js, take a look at the following resources:
+**Metode HTTP**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Acestea se regăsesc în _books-controllers.js_ și au fost testate în Postman.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**getAllBooks (GET)** - Această metodă este utilizată pentru a obține toate cărțile din baza de date.
+**addBook (POST)** - Această metodă este utilizată pentru a adăuga o nouă carte în baza de date.
+**updateBook (PUT)** - Această metodă este utilizată pentru a actualiza o carte existentă în baza de date.
+**deleteBook (DELETE)** - Această metodă este utilizată pentru a șterge o carte existentă din baza de date.
+![image](https://github.com/dinubianca20/cloudComputing/assets/106347054/348182b2-37f0-4cf3-83d5-83c91e2b8826)
 
-## Deploy on Vercel
+3. Capturi aplicație
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Home**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](https://github.com/dinubianca20/cloudComputing/assets/106347054/e8176719-fb32-4660-a74e-5501d3915364)
+
+**Cărțile favorite**
+
+![image](https://github.com/dinubianca20/cloudComputing/assets/106347054/b2ab94c4-ab30-43e8-a450-ad118de996f4)
+
+_Formular de adăugare_
+
+![image](https://github.com/dinubianca20/cloudComputing/assets/106347054/00d5b8ef-e1d7-462c-9e1c-0d63c88e075c)
+
+
+
