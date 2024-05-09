@@ -33,6 +33,10 @@ Acestea se regăsesc în _books-controllers.js_ și au fost testate în Postman.
 **deleteBook (DELETE)** - Această metodă este utilizată pentru a șterge o carte existentă din baza de date.
 ![image](https://github.com/dinubianca20/cloudComputing/assets/106347054/348182b2-37f0-4cf3-83d5-83c91e2b8826)
 
+**Biblioteci**
+Am folosit mongoose, o bibliotecă de modelare a datelor de obiecte (ODM) pentru MongoDB și Node.js. Oferă o soluție simplă, bazată pe scheme, pentru a modela datele aplicației
+De asemenea, am folosit axios pentru efectuarea cerintelot HTTP.
+
 3. Capturi aplicație
 
 **Home**
