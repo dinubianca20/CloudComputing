@@ -7,12 +7,13 @@ const BookDetail = () => {
 
     const [book, setBook] = useState();
     const router = useRouter();
+    console.log(router.query);
     const id = router.query.id;
 
     useEffect(() => {
-        getBookFromId(id).then((data)=>setBook(data)).catch(err=>console.log(err));
+        getBookFromId(id).then((data)=>{console.log(data); setBook(data)}).catch(err=>console.log(err));
     },[router.query.id]);
-    console.log(book);
+    
 
     const getFormData = (data) => {
 
