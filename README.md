@@ -1,40 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. Introducere
 
-## Getting Started
+Proiectul reprezintă o aplicație pentru gestionarea unei colecții extinse de cărți. Scopul acestei aplicații este de a furniza utilizatorilor o imagine de ansamblu, oferind funcționalități esențiale pentru gestionarea și explorarea colecțiilor personale. Utilizatorii pot vedea lista completă a cărților cu detalii esențiale și cărțile favorite.
+Toate datele din aplicație au fost gestionate prin intermediul unei baze de date cloud, folosind tehnologia **MongoDB**. Backend-ul aplicației a fost dezvoltat utilizând **Next.js** și un API pentru _operațiile CRUD_ realizate în cadrul bazei de date. Interfața utilizatorului a fost creată în React, iar aplicația finală a fost publicată cu ajutorul platformei de cloud **Vercel**.
 
-First, run the development server:
+2. MondoDB API
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Prin intermediul bazei de date, utilizatorii pot adăuga, șterge și actualiza cărți, iar aceste modificări sunt reflectate și în baza de date. Pentru a efectua operațiile CRUD asupra bazei de date, am dezvoltat două rute principale și una secundară pentru adăugarea unei cărți noi.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Home ("/"): Aceasta este ruta principală a aplicației, care afișează toate cărțile disponibile
+2. Favorite ("/books"): Aceasta este o altă rută principală, care probabil cărțile favorite ale utilizatorului.
+3. Add book ("/books/add"): Aceasta este o rută secundară care permite utilizatorului să adauge o nouă carte în aplicație.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Aceste rute sunt incluse într-un meniu.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Screenshot 2024-05-09 222252](https://github.com/dinubianca20/cloudComputing/assets/106347054/13986079-3227-4806-917f-1b11c9b3a642)
