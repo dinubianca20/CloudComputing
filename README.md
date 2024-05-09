@@ -1,7 +1,7 @@
 **1. Introducere**
 
 Proiectul reprezintă o aplicație pentru gestionarea unei colecții extinse de cărți. Scopul acestei aplicații este de a furniza utilizatorilor o imagine de ansamblu, oferind funcționalități esențiale pentru gestionarea și explorarea colecțiilor personale. Utilizatorii pot vedea lista completă a cărților cu detalii esențiale și cărțile favorite.
-Toate datele din aplicație au fost gestionate prin intermediul unei baze de date cloud, folosind tehnologia **MongoDB**. Backend-ul aplicației a fost dezvoltat utilizând **Next.js** și un API pentru _operațiile CRUD_ realizate în cadrul bazei de date. Interfața utilizatorului a fost creată în React, iar aplicația finală a fost publicată cu ajutorul platformei de cloud **Vercel**.
+Toate datele din aplicație au fost gestionate prin intermediul unei baze de date cloud, folosind tehnologia **MongoDB**. Backend-ul aplicației a fost dezvoltat utilizând **Node.js** și un API pentru _operațiile CRUD_ realizate în cadrul bazei de date. Interfața utilizatorului a fost creată în React, iar aplicația finală a fost publicată cu ajutorul platformei de cloud **Vercel**.
 
 **2. Tehnologii**
 
