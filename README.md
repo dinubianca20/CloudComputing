@@ -52,6 +52,7 @@ _Formular de adăugare_
 ![image](https://github.com/dinubianca20/cloudComputing/assets/106347054/00d5b8ef-e1d7-462c-9e1c-0d63c88e075c)
 
 Link VERCEL - https://cloud-computing-navy.vercel.app/
+Link YOUTUBE - https://youtu.be/bLlSvGqrr9w
 
 
 
